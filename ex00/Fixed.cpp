@@ -6,7 +6,7 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 07:40:24 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/27 13:11:56 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/28 21:59:15 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Fixed::Fixed() {
 
 Fixed::Fixed(const Fixed& rhs) {
 	cout << "Copy constructor called" << endl;
-	this->setRawBits(rhs.getRawBits());
+	*this = rhs;
 }
 
 Fixed& Fixed::operator=(const Fixed& rhs) {
