@@ -6,13 +6,13 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 07:40:24 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/29 01:51:11 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/30 01:41:01 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed() {
+Fixed::Fixed(void) {
 	this->numberValue = 0;
 }
 
@@ -34,7 +34,7 @@ Fixed& Fixed::operator=(const Fixed& rhs) {
 	return *this;
 }
 
-Fixed::~Fixed() {
+Fixed::~Fixed(void) {
 }
 
 int Fixed::getRawBits(void) const {
