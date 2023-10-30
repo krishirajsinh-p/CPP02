@@ -6,7 +6,7 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 07:40:32 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/28 22:49:58 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/30 00:51:54 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,16 @@ class Fixed
 	public:
 		Fixed();
 		~Fixed();
+
 		Fixed(const Fixed& rhs);
-		Fixed& operator=(const Fixed& rhs);
-		int getRawBits(void) const;
-		void setRawBits(const int raw);
 		Fixed(const int integerNum);
 		Fixed(const float floatNum);
+
+		Fixed& operator=(const Fixed& rhs);
+
+		int getRawBits(void) const;
+		void setRawBits(const int raw);
+
 		float toFloat(void) const;
 		int toInt(void) const;
 };
